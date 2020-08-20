@@ -32,13 +32,35 @@ a {
   bottom: 2em;
   width: 100%;
   height: 2em;
+  font-size: 1em;
   text-align: center;
 }
-.footer a {
-  font-size: 2em;
-}
+
 .footer img {
   display:inline-block;
   height: 100%;
   vertical-align:middle;
+  margin: 0 1em 0 1em;
+}
+
+@media(max-width: 992px) {
+  .logo-inner {
+    height: 20%;
+    width: 80%;
+    left: 10%;
+    top: 40%;
+    position: fixed;
+    transition: 0.5s;
+    animation: inner_anim 2s linear infinite;
+  }
+
+  @keyframes inner_anim {
+    0%  {background-image: url("../assets/logo.png");}
+    50%  {background-image: url("../assets/logo_light.png");}
+  }
+
+  .footer {
+    height: 2em;
+    font-size: 2em;
+  }
 }
