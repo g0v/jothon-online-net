@@ -58,9 +58,4 @@ a {
     0%  {background-image: url("../assets/logo.png");}
     50%  {background-image: url("../assets/logo_light.png");}
   }
-
-  .footer {
-    height: 2em;
-    font-size: 2em;
-  }
 }
